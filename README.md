@@ -1,6 +1,6 @@
 # E-Commerce-Site
 
-Main Pages:
+# Main Pages:
 ![Screenshot (115)](https://user-images.githubusercontent.com/104382438/200992741-5c888825-fa4e-4d0b-a984-9b690d79323f.png)
 ![Screenshot (116)](https://user-images.githubusercontent.com/104382438/200992754-f0a8959b-a0f1-4842-a114-858414636286.png)
 ![Screenshot (117)](https://user-images.githubusercontent.com/104382438/200992760-436cf4a9-8e22-4ef7-a129-119cc91e7fd4.png)
