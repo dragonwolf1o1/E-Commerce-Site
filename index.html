@@ -1,323 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>
-            E-Commerce Site
-        </title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500&family=Roboto:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">  
-    </head>
-    <body bgcolor="#FFFFF7">
-        <header>
-            <nav class="nav1">
-                <div class="left">
-                    <h1><span>Char</span>Lok</h1>
-                    <h2>Lo apne Sapno Ke char</h2>
-                    <a href="#"></a>
-                    <a href="#"></a>
-                </div>
-                <div class="right">
-                </div>
-            </nav>
-            <nav class ="nav2">
-                <div class="nav2-left">
-                    <i class="fa fa-phone"></i>+91 9696426675
-                    <i class="fa fa-envelope"></i>saurabhgzpgupta@gmail.com
-                </div>
-                <div class="nav2-center">
-                    <a href="index.html">About</a>
-                    <a href="register.html">Register</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlok Vault | Curated Luxury Car Marketplace</title>
+    <meta name="description" content="Charlok Vault is a premium multi-page static marketplace for ultra-rare cars, designed with responsive luxury styling and interactive curation tools.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body class="page page-home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Charlok Vault home">
+                <span class="brand-mark">C</span>
+                <span class="brand-copy">
+                    <strong>Charlok Vault</strong>
+                    <small>Rare machines. Quiet luxury.</small>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <div class="nav-panel" id="site-nav">
+                <nav class="site-nav" aria-label="Primary">
+                    <a class="is-active" href="index.html">Home</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="contact.html">Contact</a>
                     <a href="login.html">Login</a>
-                </div>
-                <div class="nav2-right">
-                    <a class="fa fa-map" href="contact_us.html">Contact Us</a>
-                </div>
+                    <a href="register.html">Register</a>
+                </nav>
+                <a class="nav-cta" href="collection.html">
+                    Saved Garage
+                    <span data-saved-count>0</span>
+                </a>
+            </div>
+        </header>
 
-            </nav>
-            <nav class="nav3">
-               <ul>
-                <li><a href="#"><i class="fa fa-home"></i>HOME</a></li>
-                <li><a href="#"><i class="fa fa-user"></i>Boy</a></li>
-                <li><a href="#"><i class="fa fa-users"></i>Our Custumers</a></li>
-                <li>
-                    <a href="#"><i class="fa fa-anchor"></i>Categories<i class="fa fa-caret-down"></i></a>
-                    <ul>
-                        <li><a href="#"><i class="fa fa-car"></i>Aston Martin Vehicles</a></li>
-                        <li><a href="#"><i class="fa fa-car"></i>Audi Vehicles</a></li>
-                        <li><a href="#"><i class="fa fa-car"></i>Bugatti Vehicles/a></li>
-                    </ul>
-                </li>
-                <li><a href="#"><i class="fa fa-calendar-check-o"></i>Special's Offer's</a></li>
-                <li><a href="#"><i class="fa fa-search"></i>Find</a></li>
-               </ul> 
-            </nav>
-            <i class="fa fa-anchor" id="menubar"></i>
-                <section class ="featured">
-                </section>
-                </section>
-        </header> 
-        <section class="latest">
-            <div class="product-intro">
-                <h1>New <span>Arrivals</span></h1>
-                <p>Expensive.</p>
-            </div>
-        <div class="card-container">
-            <div class="card">
-                <div>
-                    <img src="1.jpg" alt="">
-                </div>
-                <h1>1963 Ferrari 250 GTO</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$5 million</p>
-                <button>Add to cart</button>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="2.jpg" alt="">
-                </div>
-                <h1>Rolls-Royce Boat Tail</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$3 million</p>
-                <button>Add to cart</button>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="3.jpg" alt="">
-                </div>
-                <h1>Bugatti La Voiture Noire</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$4 million</p>
-                <button>Add to cart</button>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div>
-                    <img src="4.jpg" alt="">
-                </div>
-                <h1>Pagani Zonda</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$5 million</p>
-                <button>Add to cart</button>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="5.jpg" alt="">
-                </div>
-                <h1>Rolls-Royce Sweptail</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$6 million</p>
-                <button>Add to cart</button>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="6.jpg" alt="">
-                </div>
-                <h1>Bugatti Centodieci</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$7 million</p>
-                <button>Add to cart</button>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div>
-                    <img src="7.jpg" alt="">
-                </div>
-                <h1>Bugatti Divo</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$8 million</p>
-                <button>Add to cart</button>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="8.jpg" alt="">
-                </div>
-                <h1>Bugatti Chiron Super Sport</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$9 million</p>
-                <button>Add to cart</button>
-            </div>
-            <div class="card">
-                <div>
-                    <img src="9.jpg" alt="">
-                </div>
-                <h1>Lamborghini Sian</h1>
-                <span>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                </span>
-                <p>$10 million</p>
-                <button>Add to cart</button>
-            </div>
-        </div>
-        </section> 
-        
-        <section class="popular">
-            <div class="product-intro">
-                <h1>Pupular <span>Products</span></h1>
-                <p>VIP's Choices.</p>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div>
-                        <img src="10.jpg" alt="">
+        <main id="main-content">
+            <section class="hero hero-home">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Private marketplace for collector-grade icons</p>
+                    <h1>Drive the rarest stories ever built.</h1>
+                    <p class="lead">
+                        Charlok Vault turns a simple static catalog into an immersive luxury buying experience,
+                        with curated collections, responsive design, and a custom digital concierge.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="collection.html">Explore the garage</a>
+                        <a class="button button-secondary" href="experience.html#curator-lab">Try the curator lab</a>
                     </div>
-                    <h1>Pagani Huayra</h1>
-                    <span>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </span>
-                    <p>$20 million</p>
-                    <button>Add to cart</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="11.jpg" alt="">
+                    <div class="hero-stats">
+                        <article class="stat-card">
+                            <strong>15</strong>
+                            <span>handpicked halo cars</span>
+                        </article>
+                        <article class="stat-card">
+                            <strong>24h</strong>
+                            <span>private concierge reply</span>
+                        </article>
+                        <article class="stat-card">
+                            <strong>5-step</strong>
+                            <span>delivery and ownership ritual</span>
+                        </article>
                     </div>
-                    <h1>W Motors Lykan</h1>
-                    <span>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </span>
-                    <p>$30 million</p>
-                    <button>Add to cart</button>
                 </div>
-                <div class="card">
-                    <div>
-                        <img src="12.jpg" alt="">
+                <div class="hero-visual" data-reveal>
+                    <figure class="hero-media-card">
+                        <img src="assets/images/cars/bugatti-la-voiture-noire.jpg" alt="Bugatti La Voiture Noire in the Charlok Vault spotlight">
+                        <figcaption>
+                            <span class="eyebrow-pill">Tonight's spotlight</span>
+                            <h2>Bugatti La Voiture Noire</h2>
+                            <p>An all-black masterpiece reserved for clients who prefer their statements whispered.</p>
+                        </figcaption>
+                    </figure>
+                    <div class="floating-note floating-note-top">
+                        <span>Signature service</span>
+                        <strong>Track, coachbuilt and collector-ready curation</strong>
                     </div>
-                    <h1>Bugatti Chiron</h1>
-                    <span>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </span>
-                    <p>$40 million</p>
-                    <button>Add to cart</button>
-                </div>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <div>
-                        <img src="13.jpg" alt="">
+                    <div class="floating-note floating-note-bottom">
+                        <span>Client benefit</span>
+                        <strong>Save favorites across pages and build a private shortlist</strong>
                     </div>
-                    <h1>Gordon Murray T.50</h1>
-                    <span>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </span>
-                    <p>$50 million</p>
-                    <button>Add to cart</button>
                 </div>
-                <div class="card">
-                    <div>
-                        <img src="14.jpg" alt="">
-                    </div>
-                    <h1>Ferrari Pininfarina</h1>
-                    <span>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </span>
-                    <p>$60 million</p>
-                    <button>Add to cart</button>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="15.jpg" alt="">
-                    </div>
-                    <h1>Koenigsegg Jesko</h1>
-                    <span>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </span>
-                    <p>$70 million</p>
-                    <button>Add to cart</button>
-                </div>
-            </div>
-        </section> 
+            </section>
 
+            <section class="ticker" aria-label="Highlights">
+                <div class="ticker-track">
+                    <span>Coachbuilt commissions</span>
+                    <span>Collector icons</span>
+                    <span>Private vault previews</span>
+                    <span>Dream garage shortlists</span>
+                    <span>Responsive by design</span>
+                    <span>Curator-powered recommendations</span>
+                    <span>Coachbuilt commissions</span>
+                    <span>Collector icons</span>
+                    <span>Private vault previews</span>
+                    <span>Dream garage shortlists</span>
+                    <span>Responsive by design</span>
+                    <span>Curator-powered recommendations</span>
+                </div>
+            </section>
 
-        <footer>
+            <section class="section story-grid">
+                <div class="section-heading" data-reveal>
+                    <p class="eyebrow">Designed beyond a normal storefront</p>
+                    <h2>A cinematic luxury interface, not just a product list.</h2>
+                </div>
+                <div class="story-cards">
+                    <article class="story-card" data-reveal>
+                        <span class="story-index">01</span>
+                        <h3>Editorial home experience</h3>
+                        <p>Layered backgrounds, floating detail cards, animated reveals, and premium typography create an intentional first impression.</p>
+                    </article>
+                    <article class="story-card" data-reveal>
+                        <span class="story-index">02</span>
+                        <h3>Smart multi-page journey</h3>
+                        <p>Collection, experience, contact, login, register, and success pages now share one cohesive visual system.</p>
+                    </article>
+                    <article class="story-card" data-reveal>
+                        <span class="story-index">03</span>
+                        <h3>Extra feature by design</h3>
+                        <p>The Curator Lab recommends a car based on your mood, budget, and intent, making this static site feel handcrafted and alive.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section featured-section">
+                <div class="section-heading split-heading" data-reveal>
+                    <div>
+                        <p class="eyebrow">Featured collection</p>
+                        <h2>Four machines currently leading the room.</h2>
+                    </div>
+                    <a class="text-link" href="collection.html">See the full collection</a>
+                </div>
+                <div class="featured-grid" data-home-featured></div>
+            </section>
+
+            <section class="section editorial-section">
+                <div class="editorial-layout">
+                    <div class="editorial-copy" data-reveal>
+                        <p class="eyebrow">Why it feels special</p>
+                        <h2>Built to feel like a luxury private client portal.</h2>
+                        <p>
+                            Instead of a flat template, the new design uses warm gold accents, deep midnight tones,
+                            layered gradients, and magazine-like spacing to create atmosphere on desktop and mobile.
+                        </p>
+                        <p>
+                            Every key page is responsive, every card respects smaller screens, and the shared
+                            components keep the experience consistent without feeling repetitive.
+                        </p>
+                    </div>
+                    <div class="editorial-stack" data-reveal>
+                        <article class="detail-card">
+                            <span class="detail-label">Responsive system</span>
+                            <strong>Flexible grid, mobile navigation, adaptive cards</strong>
+                        </article>
+                        <article class="detail-card">
+                            <span class="detail-label">Organized files</span>
+                            <strong>Images, CSS, and JS moved into a clean assets structure</strong>
+                        </article>
+                        <article class="detail-card">
+                            <span class="detail-label">Added functionality</span>
+                            <strong>Saved garage, live collection filters, and curated recommendations</strong>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section cta-banner" data-reveal>
+                <div>
+                    <p class="eyebrow">Next step</p>
+                    <h2>Build your shortlist, then let the concierge narrow it further.</h2>
+                </div>
+                <div class="cta-actions">
+                    <a class="button button-primary" href="collection.html">Start saving cars</a>
+                    <a class="button button-secondary" href="contact.html">Book a private consultation</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
             <div>
-                <h1>Car<span>Lok</span></h1>
-                <p>Lo Apno Sapno Ke car</p>
+                <a class="brand brand-footer" href="index.html">
+                    <span class="brand-mark">C</span>
+                    <span class="brand-copy">
+                        <strong>Charlok Vault</strong>
+                        <small>Collector-grade digital showroom</small>
+                    </span>
+                </a>
             </div>
-            <div>
-                <i class="fa fa-facebook"></i>
-                <i class="fa fa-whatsapp"></i>
-                <i class="fa fa-instagram"></i>
-                <i class="fa fa-twitter"></i>
+            <div class="footer-links">
+                <a href="collection.html">Collection</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
             </div>
-            <div>
-                <p>
-                    @2021 Copyright All Rights Reserved
-                </p>
-            </div>
+            <p class="footer-note">Built as a responsive static luxury marketplace with a custom curation layer.</p>
         </footer>
-            
-        
-    </body>
+    </div>
+
+    <div class="toast" data-toast aria-live="polite"></div>
+</body>
 </html>

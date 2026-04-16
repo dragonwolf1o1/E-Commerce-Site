@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register | Charlok Vault</title>
-    <meta name="description" content="Create your Charlok Vault account to start building a private shortlist of collector-grade cars.">
+    <title>Success | Charlok Vault</title>
+    <meta name="description" content="Confirmation page for Charlok Vault form submissions and registrations.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/main.css">
     <script defer src="assets/js/main.js"></script>
 </head>
-<body class="page page-auth">
+<body class="page page-success">
     <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-shell">
         <header class="site-header">
@@ -35,7 +35,7 @@
                     <a href="experience.html">Experience</a>
                     <a href="contact.html">Contact</a>
                     <a href="login.html">Login</a>
-                    <a class="is-active" href="register.html">Register</a>
+                    <a href="register.html">Register</a>
                 </nav>
                 <a class="nav-cta" href="collection.html">
                     Saved Garage
@@ -44,47 +44,17 @@
             </div>
         </header>
 
-        <main id="main-content" class="auth-main">
-            <section class="auth-shell">
-                <div class="auth-copy" data-reveal>
-                    <p class="eyebrow">Create your access</p>
-                    <h1>Open your collector profile.</h1>
-                    <p class="lead">
-                        Register to move through the site like a private client, with saved selections and a smoother path into the Curator Lab.
-                    </p>
-                    <div class="auth-benefits">
-                        <article class="detail-card">
-                            <span class="detail-label">Saved garage</span>
-                            <strong>Keep the cars that matter close while you continue browsing.</strong>
-                        </article>
-                        <article class="detail-card">
-                            <span class="detail-label">Better discovery</span>
-                            <strong>Use curation tools and multipage flows built for clarity on every device.</strong>
-                        </article>
-                    </div>
+        <main id="main-content" class="success-main">
+            <section class="success-card" data-reveal>
+                <p class="eyebrow">All set</p>
+                <h1>Your request is in the vault.</h1>
+                <p class="lead">
+                    Thanks for taking the next step. Continue browsing the collection or use the Curator Lab to refine your shortlist even further.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="collection.html">Back to collection</a>
+                    <a class="button button-secondary" href="experience.html">Open Curator Lab</a>
                 </div>
-
-                <form class="form-card auth-form" action="success.html" method="get" data-reveal>
-                    <h2>Register</h2>
-                    <label>
-                        <span>Full name</span>
-                        <input type="text" name="name" placeholder="Your full name" required>
-                    </label>
-                    <label>
-                        <span>Email</span>
-                        <input type="email" name="email" placeholder="name@example.com" required>
-                    </label>
-                    <label>
-                        <span>Phone</span>
-                        <input type="tel" name="phone" placeholder="+91">
-                    </label>
-                    <label>
-                        <span>Password</span>
-                        <input type="password" name="password" placeholder="Create a secure password" required>
-                    </label>
-                    <button class="button button-primary" type="submit">Create account</button>
-                    <p class="form-footnote">Already have access? <a href="login.html">Sign in here</a>.</p>
-                </form>
             </section>
         </main>
 
@@ -103,7 +73,7 @@
                 <a href="experience.html">Experience</a>
                 <a href="contact.html">Contact</a>
             </div>
-            <p class="footer-note">Registration now matches the rest of the site instead of using a disconnected template.</p>
+            <p class="footer-note">A single polished confirmation flow replaces the old minimal success screen.</p>
         </footer>
     </div>
 

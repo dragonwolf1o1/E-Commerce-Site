@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection | Charlok Vault</title>
+    <meta name="description" content="Browse the full Charlok Vault collection with live filters, search, and a saved garage shortlist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body class="page page-collection">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Charlok Vault home">
+                <span class="brand-mark">C</span>
+                <span class="brand-copy">
+                    <strong>Charlok Vault</strong>
+                    <small>Rare machines. Quiet luxury.</small>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <div class="nav-panel" id="site-nav">
+                <nav class="site-nav" aria-label="Primary">
+                    <a href="index.html">Home</a>
+                    <a class="is-active" href="collection.html">Collection</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </nav>
+                <a class="nav-cta" href="#saved-garage">
+                    Saved Garage
+                    <span data-saved-count>0</span>
+                </a>
+            </div>
+        </header>
+
+        <main id="main-content">
+            <section class="hero hero-subpage">
+                <div class="hero-copy" data-reveal>
+                    <p class="eyebrow">Full collection</p>
+                    <h1>Explore every machine in the vault.</h1>
+                    <p class="lead">
+                        Filter by personality, search by name, and save standout cars into your private garage shortlist.
+                    </p>
+                </div>
+                <div class="hero-aside" data-reveal>
+                    <div class="info-card">
+                        <span class="eyebrow-pill">Live tools</span>
+                        <strong>Search, category filters, and persistent saved cars</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <div class="collection-controls" data-reveal>
+                    <div class="filter-group" role="group" aria-label="Collection filters">
+                        <button class="filter-chip is-active" type="button" data-filter-control="all">All</button>
+                        <button class="filter-chip" type="button" data-filter-control="iconic">Iconic</button>
+                        <button class="filter-chip" type="button" data-filter-control="coachbuilt">Coachbuilt</button>
+                        <button class="filter-chip" type="button" data-filter-control="track">Track</button>
+                        <button class="filter-chip" type="button" data-filter-control="future">Future</button>
+                    </div>
+                    <label class="search-field">
+                        <span class="sr-only">Search the collection</span>
+                        <input type="search" placeholder="Search by name or brand" data-search-input>
+                    </label>
+                </div>
+
+                <div class="collection-status" data-reveal>
+                    <p><strong data-results-count>15</strong> machines currently visible</p>
+                    <p>Saved cars stay with you as you move across the site.</p>
+                </div>
+
+                <div class="collection-layout">
+                    <div class="catalog-grid" data-catalog></div>
+
+                    <aside class="saved-panel" id="saved-garage" data-reveal>
+                        <div class="saved-panel-head">
+                            <div>
+                                <p class="eyebrow">Private shortlist</p>
+                                <h2>Saved Garage</h2>
+                            </div>
+                            <button class="text-button" type="button" data-clear-saved>Clear all</button>
+                        </div>
+                        <p class="panel-copy">Create your own collector board by saving cars from the catalog.</p>
+                        <div class="saved-list" data-saved-list></div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <a class="brand brand-footer" href="index.html">
+                    <span class="brand-mark">C</span>
+                    <span class="brand-copy">
+                        <strong>Charlok Vault</strong>
+                        <small>Collector-grade digital showroom</small>
+                    </span>
+                </a>
+            </div>
+            <div class="footer-links">
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
+                <a href="register.html">Register</a>
+            </div>
+            <p class="footer-note">Built for discovery, shortlist-building, and responsive browsing on any screen.</p>
+        </footer>
+    </div>
+
+    <div class="toast" data-toast aria-live="polite"></div>
+</body>
+</html>

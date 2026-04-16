@@ -1,38 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - MongoDB</title>
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Login | Charlok Vault</title>
+    <meta name="description" content="Access your Charlok Vault account and continue building your private garage shortlist.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script defer src="assets/js/main.js"></script>
 </head>
-
-<body>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-
+<body class="page page-auth">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+        <header class="site-header">
+            <a class="brand" href="index.html" aria-label="Charlok Vault home">
+                <span class="brand-mark">C</span>
+                <span class="brand-copy">
+                    <strong>Charlok Vault</strong>
+                    <small>Rare machines. Quiet luxury.</small>
+                </span>
+            </a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+            <div class="nav-panel" id="site-nav">
+                <nav class="site-nav" aria-label="Primary">
+                    <a href="index.html">Home</a>
+                    <a href="collection.html">Collection</a>
+                    <a href="experience.html">Experience</a>
+                    <a href="contact.html">Contact</a>
+                    <a class="is-active" href="login.html">Login</a>
+                    <a href="register.html">Register</a>
+                </nav>
+                <a class="nav-cta" href="collection.html">
+                    Saved Garage
+                    <span data-saved-count>0</span>
+                </a>
             </div>
-            <div class="col-md-6 main">
-                <form action="/sign_up" method="POST">
+        </header>
+
+        <main id="main-content" class="auth-main">
+            <section class="auth-shell">
+                <div class="auth-copy" data-reveal>
+                    <p class="eyebrow">Member access</p>
+                    <h1>Return to your private garage.</h1>
+                    <p class="lead">
+                        Continue browsing saved cars, revisit the collection, and pick up where your last curation session ended.
+                    </p>
+                    <div class="auth-benefits">
+                        <article class="detail-card">
+                            <span class="detail-label">Keep your pace</span>
+                            <strong>Move from inspiration to shortlist without friction.</strong>
+                        </article>
+                        <article class="detail-card">
+                            <span class="detail-label">Consistent design</span>
+                            <strong>The same premium visual language carries through every page.</strong>
+                        </article>
+                    </div>
+                </div>
+
+                <form class="form-card auth-form" action="collection.html" method="get" data-reveal>
                     <h2>Login</h2>
-                    <input type="text" class="box" id="email" name="email" placeholder="Email" required />
-                    <br>
-                    <input type="text" class="box" id="password" name="password" placeholder="Password" required />
-                    <br>
-                    <input type="submit" value="Login" id="submit" />
+                    <label>
+                        <span>Email</span>
+                        <input type="email" name="email" placeholder="name@example.com" required>
+                    </label>
+                    <label>
+                        <span>Password</span>
+                        <input type="password" name="password" placeholder="Enter your password" required>
+                    </label>
+                    <button class="button button-primary" type="submit">Enter the vault</button>
+                    <p class="form-footnote">New here? <a href="register.html">Create an account</a>.</p>
                 </form>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div>
+                <a class="brand brand-footer" href="index.html">
+                    <span class="brand-mark">C</span>
+                    <span class="brand-copy">
+                        <strong>Charlok Vault</strong>
+                        <small>Collector-grade digital showroom</small>
+                    </span>
+                </a>
             </div>
-            <div class="col-md-3">
+            <div class="footer-links">
+                <a href="collection.html">Collection</a>
+                <a href="experience.html">Experience</a>
+                <a href="contact.html">Contact</a>
             </div>
-        </div>
+            <p class="footer-note">The old Bootstrap form has been redesigned into a branded, responsive auth flow.</p>
+        </footer>
     </div>
 
+    <div class="toast" data-toast aria-live="polite"></div>
 </body>
-
 </html>
